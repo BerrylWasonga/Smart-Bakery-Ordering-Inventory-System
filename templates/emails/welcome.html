@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Welcome to {{SITE_NAME}}</title>
+<style>
+  body{font-family:Arial,sans-serif;background:#f5ede0;margin:0;padding:20px}
+  .container{max-width:580px;margin:0 auto}
+  .header{background:linear-gradient(135deg,#8B4513,#D2691E);border-radius:16px 16px 0 0;padding:40px;text-align:center}
+  .header h1{color:white;font-size:26px;margin:8px 0;font-family:Georgia,serif}
+  .body{background:white;padding:32px}
+  .body p{color:#5A4035;line-height:1.8;font-size:15px}
+  .feature{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #f5ede0}
+  .feature-icon{width:40px;height:40px;background:#fff8f0;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px}
+  .feature-text{font-size:14px;color:#5A4035}
+  .feature-text strong{display:block;color:#2C1810}
+  .cta{text-align:center;margin:28px 0}
+  .btn{display:inline-block;background:linear-gradient(135deg,#8B4513,#D2691E);color:white;text-decoration:none;padding:14px 36px;border-radius:50px;font-weight:700;font-size:15px}
+  .footer{background:#f5ede0;padding:20px;border-radius:0 0 16px 16px;text-align:center;font-size:12px;color:#8B7355}
+  .footer a{color:#8B4513}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div style="font-size:40px">🎉</div>
+    <h1>Welcome to {{SITE_NAME}}!</h1>
+    <p style="color:rgba(255,255,255,.85);margin:0;font-size:14px">{{SITE_TAGLINE}}</p>
+  </div>
+  <div class="body">
+    <p>Hi <strong>{{CUSTOMER_NAME}}</strong>,</p>
+    <p>Welcome to the {{SITE_NAME}} family! We're so excited to have you with us. Your account has been created and you're ready to start ordering.</p>
+    <p>Here's what you get as a registered member:</p>
+    <div class="feature"><div class="feature-icon">📦</div><div class="feature-text"><strong>Order Tracking</strong>Track all your orders in real-time from your dashboard.</div></div>
+    <div class="feature"><div class="feature-icon">❤️</div><div class="feature-text"><strong>Wishlist</strong>Save your favourite products for later.</div></div>
+    <div class="feature"><div class="feature-icon">🏠</div><div class="feature-text"><strong>Saved Addresses</strong>Save multiple delivery addresses for faster checkout.</div></div>
+    <div class="feature"><div class="feature-icon">🎁</div><div class="feature-text"><strong>Exclusive Offers</strong>Members get first access to promotions and new products.</div></div>
+    <p style="margin-top:24px">Use code <strong style="color:#8B4513;background:#fff8f0;padding:2px 8px;border-radius:6px">WELCOME10</strong> on your first order for <strong>10% off</strong>!</p>
+    <div class="cta"><a href="{{SITE_URL}}/pages/shop.php" class="btn">Start Shopping Now</a></div>
+  </div>
+  <div class="footer">
+    <p>Questions? Contact us at <a href="mailto:{{SITE_EMAIL}}">{{SITE_EMAIL}}</a></p>
+    <p>{{SITE_NAME}} · {{SITE_ADDRESS}}</p>
+  </div>
+</div>
+</body>
+</html>

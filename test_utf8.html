@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - </title>
+    <meta name="description" content="">
+    <meta name="theme-color" content="#8B4513">
+    <!-- Open Graph -->
+    <meta property="og:title" content=" - ">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="http://localhost/bakery/assets/css/style.css" rel="stylesheet">
+</head>
+<body class="bakery-body" data-theme="light">
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar navbar-expand-lg bakery-navbar fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="http://localhost/bakery">
+            <div class="brand-icon">
+                <i class="fas fa-bread-slice"></i>
+            </div>
+            <div>
+                <span class="brand-name"></span>
+            </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mx-auto gap-1">
+                <li class="nav-item"><a class="nav-link active" href="http://localhost/bakery">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://localhost/bakery/pages/shop.php">Shop</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Categories</a>
+                    <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="http://localhost/bakery/pages/shop.php?category=cakes">
+                            Cakes                        </a></li>
+                                                <li><a class="dropdown-item" href="http://localhost/bakery/pages/shop.php?category=bread">
+                            Bread                        </a></li>
+                                                <li><a class="dropdown-item" href="http://localhost/bakery/pages/shop.php?category=pastries">
+                            Pastries                        </a></li>
+                                                <li><a class="dropdown-item" href="http://localhost/bakery/pages/shop.php?category=cookies">
+                            Cookies                        </a></li>
+                                                <li><a class="dropdown-item" href="http://localhost/bakery/pages/shop.php?category=cupcakes">
+                            Cupcakes                        </a></li>
+                                                <li><a class="dropdown-item" href="http://localhost/bakery/pages/shop.php?category=donuts">
+                            Donuts                        </a></li>
+                                                <li><a class="dropdown-item" href="http://localhost/bakery/pages/shop.php?category=pies-tarts">
+                            Pies &amp; Tarts                        </a></li>
+                                                <li><a class="dropdown-item" href="http://localhost/bakery/pages/shop.php?category=beverages">
+                            Beverages                        </a></li>
+                                            </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="http://localhost/bakery/pages/blog.php">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://localhost/bakery/pages/about.php">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://localhost/bakery/pages/contact.php">Contact</a></li>
+            </ul>
+            <div class="navbar-actions d-flex align-items-center gap-3">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle btn-icon" id="themeToggle" title="Toggle theme">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <!-- Cart -->
+                <a href="http://localhost/bakery/pages/cart.php" class="btn-icon position-relative" title="Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                                    </a>
+                <!-- Account -->
+                                <a href="http://localhost/bakery/pages/login.php" class="btn btn-outline-primary btn-sm nav-btn">Login</a>
+                <a href="http://localhost/bakery/pages/register.php" class="btn btn-primary btn-sm nav-btn">Sign Up</a>
+                            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ========== HERO SECTION ========== -->
+<section class="hero-section" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                <div class="hero-content">
+                    <span class="hero-badge">
+                        <i class="fas fa-award me-2"></i>Nairobi's Premium Bakery
+                    </span>
+                    <h1 class="hero-title">
+                        qwwwww                    </h1>
+                    <p class="hero-subtitle"></p>
+                    <div class="hero-actions d-flex flex-wrap gap-3">
+                        <a href="http://localhost/bakery/pages/shop.php" class="btn btn-primary btn-lg hero-btn">
+                            <i class="fas fa-shopping-bag me-2"></i>Shop Now
+                        </a>
+                        <a href="http://localhost/bakery/pages/about.php" class="btn btn-outline-light btn-lg hero-btn">
+                            Our Story
+                        </a>
+                    </div>
+                    <div class="hero-stats d-flex gap-4 mt-5">
+                        <div class="stat-item">
+                            <strong>500+</strong>
+                            <span>Happy Clients</span>
+                        </div>
+                        <div class="vr"></div>
+                        <div class="stat-item">
+                            <strong>50+</strong>
+                            <span>Products</span>
+                        </div>
+                        <div class="vr"></div>
+                        <div class="stat-item">
+                            <strong>10+</strong>
+                            <span>Years Baking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left" data-aos-delay="300">
+                <div class="hero-visual">
+                    <div class="hero-circle-1"></div>
+                    <div class="hero-circle-2"></div>
+                    <div class="hero-image-card">
+                        <div class="hero-img-placeholder">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                    </div>
+                    <!-- Floating cards -->
+                    <div class="floating-card fc-1">
+                        <i class="fas fa-star text-warning"></i>
+                        <div>
+                            <strong>4.9/5</strong>
+                            <small>Rating</small>
+                        </div>
+                    </div>
+                    <div class="floating-card fc-2">
+                        <i class="fas fa-truck text-success"></i>
+                        <div>
+                            <strong>Free Delivery</strong>
+                            <small>Over KSh 3,000</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+    </div>
+</section>
+
+<!-- ========== CATEGORIES ========== -->
+<section class="section-categories py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+            <span class="section-label">Browse</span>
+            <h2 class="section-title">Our Categories</h2>
+        </div>
+        <div class="row g-3">
+                        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="0">
+                <a href="http://localhost/bakery/pages/shop.php?category=cakes" class="category-card">
+                    <div class="cat-icon">
+                                                <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h6>Cakes</h6>
+                </a>
+            </div>
+                        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="50">
+                <a href="http://localhost/bakery/pages/shop.php?category=bread" class="category-card">
+                    <div class="cat-icon">
+                                                <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <h6>Bread</h6>
+                </a>
+            </div>
+                        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                <a href="http://localhost/bakery/pages/shop.php?category=pastries" class="category-card">
+                    <div class="cat-icon">
+                                                <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <h6>Pastries</h6>
+                </a>
+            </div>
+                        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="150">
+                <a href="http://localhost/bakery/pages/shop.php?category=cookies" class="category-card">
+                    <div class="cat-icon">
+                                                <i class="fas fa-cookie"></i>
+                    </div>
+                    <h6>Cookies</h6>
+                </a>
+            </div>
+                        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                <a href="http://localhost/bakery/pages/shop.php?category=cupcakes" class="category-card">
+                    <div class="cat-icon">
+                                                <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <h6>Cupcakes</h6>
+                </a>
+            </div>
+                        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="250">
+                <a href="http://localhost/bakery/pages/shop.php?category=donuts" class="category-card">
+                    <div class="cat-icon">
+                                                <i class="fas fa-circle-notch"></i>
+                    </div>
+                    <h6>Donuts</h6>
+                </a>
+            </div>
+                        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+                <a href="http://localhost/bakery/pages/shop.php?category=pies-tarts" class="category-card">
+                    <div class="cat-icon">
+                                                <i class="fas fa-circle"></i>
+                    </div>
+                    <h6>Pies &amp; Tarts</h6>
+                </a>
+            </div>
+                        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="350">
+                <a href="http://localhost/bakery/pages/shop.php?category=beverages" class="category-card">
+                    <div class="cat-icon">
+                                                <i class="fas fa-mug-hot"></i>
+                    </div>
+                    <h6>Beverages</h6>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+
+<!-- ========== FEATURED PRODUCTS ========== -->
+<section class="section-products py-5 bg-light-cream">
+    <div class="container">
+        <div class="section-header d-flex justify-content-between align-items-end mb-5" data-aos="fade-up">
+            <div>
+                <span class="section-label">Handpicked</span>
+                <h2 class="section-title">Featured Products</h2>
+            </div>
+            <a href="http://localhost/bakery/pages/shop.php" class="btn btn-outline-primary">View All <i class="fas fa-arrow-right ms-1"></i></a>
+        </div>
+        <div class="row g-4">
+                        <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                <div class="product-card">
+                                        <span class="product-badge badge-sale">Sale</span>
+                                                            <span class="product-badge badge-hot" style="top:2.5rem">🔥 Hot</span>
+                                        <div class="product-image">
+                                                <img src="http://localhost/bakery/uploads/products/6a09f6fec9c9e_1779037950.jpg" alt="Chocolate Dream Cake" loading="lazy">
+                                                <div class="product-overlay">
+                            <button class="btn-quick-view" data-product-id="1" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="btn-wishlist " 
+                                    data-product-id="1" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cakes</span>
+                        <h6 class="product-name">
+                            <a href="http://localhost/bakery/pages/product.php?slug=chocolate-dream-cake">
+                                Chocolate Dream Cake                            </a>
+                        </h6>
+                        <p class="product-desc">Triple-layer Belgian chocolate cake with ganache</p>
+                        <div class="product-footer d-flex justify-content-between align-items-center">
+                            <div class="product-price">
+                                                                <span class="price-current">KSh 2,400.00</span>
+                                <span class="price-original">KSh 2,800.00</span>
+                                                            </div>
+                            <button class="btn-add-cart ajax-add-cart" 
+                                    data-product-id="1"
+                                    data-product-name="Chocolate Dream Cake"
+                                    >
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+                <div class="product-card">
+                                                            <div class="product-image">
+                                                <img src="http://localhost/bakery/uploads/products/6a09f76924f94_1779038057.jpg" alt="Vanilla Celebration Cake" loading="lazy">
+                                                <div class="product-overlay">
+                            <button class="btn-quick-view" data-product-id="2" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="btn-wishlist " 
+                                    data-product-id="2" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cakes</span>
+                        <h6 class="product-name">
+                            <a href="http://localhost/bakery/pages/product.php?slug=vanilla-celebration-cake">
+                                Vanilla Celebration Cake                            </a>
+                        </h6>
+                        <p class="product-desc">Classic vanilla sponge with fresh cream</p>
+                        <div class="product-footer d-flex justify-content-between align-items-center">
+                            <div class="product-price">
+                                                                <span class="price-current">KSh 2,200.00</span>
+                                                            </div>
+                            <button class="btn-add-cart ajax-add-cart" 
+                                    data-product-id="2"
+                                    data-product-name="Vanilla Celebration Cake"
+                                    >
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+                <div class="product-card">
+                                        <span class="product-badge badge-sale">Sale</span>
+                                                            <span class="product-badge badge-hot" style="top:2.5rem">🔥 Hot</span>
+                                        <div class="product-image">
+                                                <img src="http://localhost/bakery/uploads/products/6a09f7b43785d_1779038132.jpg" alt="Red Velvet Royale" loading="lazy">
+                                                <div class="product-overlay">
+                            <button class="btn-quick-view" data-product-id="3" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="btn-wishlist " 
+                                    data-product-id="3" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cakes</span>
+                        <h6 class="product-name">
+                            <a href="http://localhost/bakery/pages/product.php?slug=red-velvet-royale">
+                                Red Velvet Royale                            </a>
+                        </h6>
+                        <p class="product-desc">Classic red velvet with cream cheese frosting</p>
+                        <div class="product-footer d-flex justify-content-between align-items-center">
+                            <div class="product-price">
+                                                                <span class="price-current">KSh 2,800.00</span>
+                                <span class="price-original">KSh 3,200.00</span>
+                                                            </div>
+                            <button class="btn-add-cart ajax-add-cart" 
+                                    data-product-id="3"
+                                    data-product-name="Red Velvet Royale"
+                                    >
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+                <div class="product-card">
+                                                            <span class="product-badge badge-hot" style="top:2.5rem">🔥 Hot</span>
+                                        <div class="product-image">
+                                                <img src="http://localhost/bakery/uploads/products/6a09f85a93531_1779038298.jpg" alt="Sourdough Artisan Loaf" loading="lazy">
+                                                <div class="product-overlay">
+                            <button class="btn-quick-view" data-product-id="4" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="btn-wishlist " 
+                                    data-product-id="4" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Bread</span>
+                        <h6 class="product-name">
+                            <a href="http://localhost/bakery/pages/product.php?slug=sourdough-artisan-loaf">
+                                Sourdough Artisan Loaf                            </a>
+                        </h6>
+                        <p class="product-desc">Slow-fermented sourdough with crispy crust</p>
+                        <div class="product-footer d-flex justify-content-between align-items-center">
+                            <div class="product-price">
+                                                                <span class="price-current">KSh 450.00</span>
+                                                            </div>
+                            <button class="btn-add-cart ajax-add-cart" 
+                                    data-product-id="4"
+                                    data-product-name="Sourdough Artisan Loaf"
+                                    >
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                <div class="product-card">
+                                                            <span class="product-badge badge-hot" style="top:2.5rem">🔥 Hot</span>
+                                        <div class="product-image">
+                                                <img src="http://localhost/bakery/uploads/products/6a09f94904ce9_1779038537.jpg" alt="Butter Croissant" loading="lazy">
+                                                <div class="product-overlay">
+                            <button class="btn-quick-view" data-product-id="6" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="btn-wishlist " 
+                                    data-product-id="6" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Pastries</span>
+                        <h6 class="product-name">
+                            <a href="http://localhost/bakery/pages/product.php?slug=butter-croissant">
+                                Butter Croissant                            </a>
+                        </h6>
+                        <p class="product-desc">72-hour laminated butter croissant</p>
+                        <div class="product-footer d-flex justify-content-between align-items-center">
+                            <div class="product-price">
+                                                                <span class="price-current">KSh 180.00</span>
+                                                            </div>
+                            <button class="btn-add-cart ajax-add-cart" 
+                                    data-product-id="6"
+                                    data-product-name="Butter Croissant"
+                                    >
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+                <div class="product-card">
+                                                            <span class="product-badge badge-hot" style="top:2.5rem">🔥 Hot</span>
+                                        <div class="product-image">
+                                                <img src="http://localhost/bakery/uploads/products/6a09f9a3d4db9_1779038627.jpg" alt="Classic Chocolate Chip" loading="lazy">
+                                                <div class="product-overlay">
+                            <button class="btn-quick-view" data-product-id="8" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="btn-wishlist " 
+                                    data-product-id="8" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cookies</span>
+                        <h6 class="product-name">
+                            <a href="http://localhost/bakery/pages/product.php?slug=classic-chocolate-chip">
+                                Classic Chocolate Chip                            </a>
+                        </h6>
+                        <p class="product-desc">Brown butter chocolate chip cookies</p>
+                        <div class="product-footer d-flex justify-content-between align-items-center">
+                            <div class="product-price">
+                                                                <span class="price-current">KSh 80.00</span>
+                                                            </div>
+                            <button class="btn-add-cart ajax-add-cart" 
+                                    data-product-id="8"
+                                    data-product-name="Classic Chocolate Chip"
+                                    >
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+                <div class="product-card">
+                                                            <div class="product-image">
+                                                <img src="http://localhost/bakery/uploads/products/6a09fa23b34d4_1779038755.jpg" alt="Vanilla Swirl Cupcakes" loading="lazy">
+                                                <div class="product-overlay">
+                            <button class="btn-quick-view" data-product-id="10" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="btn-wishlist " 
+                                    data-product-id="10" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cupcakes</span>
+                        <h6 class="product-name">
+                            <a href="http://localhost/bakery/pages/product.php?slug=vanilla-swirl-cupcakes">
+                                Vanilla Swirl Cupcakes                            </a>
+                        </h6>
+                        <p class="product-desc">Vanilla cupcakes with Swiss meringue buttercream</p>
+                        <div class="product-footer d-flex justify-content-between align-items-center">
+                            <div class="product-price">
+                                                                <span class="price-current">KSh 150.00</span>
+                                                            </div>
+                            <button class="btn-add-cart ajax-add-cart" 
+                                    data-product-id="10"
+                                    data-product-name="Vanilla Swirl Cupcakes"
+                                    >
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+                <div class="product-card">
+                                        <span class="product-badge badge-sale">Sale</span>
+                                                            <span class="product-badge badge-hot" style="top:2.5rem">🔥 Hot</span>
+                                        <div class="product-image">
+                                                <img src="http://localhost/bakery/uploads/products/6a0c247ec67d5_1779180670.jpg" alt="Apple Pie" loading="lazy">
+                                                <div class="product-overlay">
+                            <button class="btn-quick-view" data-product-id="13" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="btn-wishlist " 
+                                    data-product-id="13" title="Add to Wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Pies &amp; Tarts</span>
+                        <h6 class="product-name">
+                            <a href="http://localhost/bakery/pages/product.php?slug=apple-pie">
+                                Apple Pie                            </a>
+                        </h6>
+                        <p class="product-desc">Pastry filled with sweet apple mixture.</p>
+                        <div class="product-footer d-flex justify-content-between align-items-center">
+                            <div class="product-price">
+                                                                <span class="price-current">KSh 2,200.01</span>
+                                <span class="price-original">KSh 2,499.99</span>
+                                                            </div>
+                            <button class="btn-add-cart ajax-add-cart" 
+                                    data-product-id="13"
+                                    data-product-name="Apple Pie"
+                                    >
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+    </div>
+</section>
+
+<!-- ========== PROMO BANNER ========== -->
+<section class="section-promo py-5" data-aos="fade-up">
+    <div class="container">
+        <div class="promo-banner">
+            <div class="promo-content">
+                <span class="promo-label">Limited Time</span>
+                <h3>First Order Discount</h3>
+                <p>Use code <strong>WELCOME10</strong> for 10% off your first order!</p>
+                <a href="http://localhost/bakery/pages/shop.php" class="btn btn-primary">Order Now</a>
+            </div>
+            <div class="promo-decor">
+                <i class="fas fa-birthday-cake"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== BESTSELLERS ========== -->
+<section class="section-bestsellers py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+            <span class="section-label">Most Loved</span>
+            <h2 class="section-title">Bestsellers</h2>
+        </div>
+        <div class="row g-4">
+                        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                <div class="product-card bestseller-card">
+                    <div class="bs-rank">#1</div>
+                    <div class="product-image">
+                                                <img src="http://localhost/bakery/uploads/products/6a09f6fec9c9e_1779037950.jpg" alt="Chocolate Dream Cake" loading="lazy">
+                                            </div>
+                    <div class="product-info">
+                        <h6 class="product-name">
+                            <a href="http://localhost/bakery/pages/product.php?slug=chocolate-dream-cake">
+                                Chocolate Dream Cake                            </a>
+                        </h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price-current">KSh 2,400.00</span>
+                            <button class="btn-add-cart ajax-add-cart" data-product-id="1">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="product-card bestseller-card">
+                    <div class="bs-rank">#2</div>
+                    <div class="product-image">
+                                                <img src="http://localhost/bakery/uploads/products/6a09f7b43785d_1779038132.jpg" alt="Red Velvet Royale" loading="lazy">
+                                            </div>
+                    <div class="product-info">
+                        <h6 class="product-name">
+                            <a href="http://localhost/bakery/pages/product.php?slug=red-velvet-royale">
+                                Red Velvet Royale                            </a>
+                        </h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price-current">KSh 2,800.00</span>
+                            <button class="btn-add-cart ajax-add-cart" data-product-id="3">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="product-card bestseller-card">
+                    <div class="bs-rank">#3</div>
+                    <div class="product-image">
+                                                <img src="http://localhost/bakery/uploads/products/6a09f85a93531_1779038298.jpg" alt="Sourdough Artisan Loaf" loading="lazy">
+                                            </div>
+                    <div class="product-info">
+                        <h6 class="product-name">
+                            <a href="http://localhost/bakery/pages/product.php?slug=sourdough-artisan-loaf">
+                                Sourdough Artisan Loaf                            </a>
+                        </h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price-current">KSh 450.00</span>
+                            <button class="btn-add-cart ajax-add-cart" data-product-id="4">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="product-card bestseller-card">
+                    <div class="bs-rank">#4</div>
+                    <div class="product-image">
+                                                <img src="http://localhost/bakery/uploads/products/6a09f94904ce9_1779038537.jpg" alt="Butter Croissant" loading="lazy">
+                                            </div>
+                    <div class="product-info">
+                        <h6 class="product-name">
+                            <a href="http://localhost/bakery/pages/product.php?slug=butter-croissant">
+                                Butter Croissant                            </a>
+                        </h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price-current">KSh 180.00</span>
+                            <button class="btn-add-cart ajax-add-cart" data-product-id="6">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+    </div>
+</section>
+
+<!-- ========== WHY CHOOSE US ========== -->
+<section class="section-features py-5 bg-light-cream" data-aos="fade-up">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <span class="section-label">Our Promise</span>
+            <h2 class="section-title">Why Choose Crumbs & Co?</h2>
+        </div>
+        <div class="row g-4">
+                        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="0">
+                <div class="feature-card">
+                    <div class="feature-icon icon-green">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h6>Fresh Ingredients</h6>
+                    <p>We use only the finest, locally-sourced ingredients in every bake.</p>
+                </div>
+            </div>
+                        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-icon icon-red">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h6>Made with Love</h6>
+                    <p>Every product is handcrafted by our passionate bakers.</p>
+                </div>
+            </div>
+                        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-icon icon-blue">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h6>Fast Delivery</h6>
+                    <p>Same-day delivery in Nairobi. Free over KSh 3,000.</p>
+                </div>
+            </div>
+                        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+                <div class="feature-card">
+                    <div class="feature-icon icon-gold">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h6>Premium Quality</h6>
+                    <p>Award-winning recipes perfected over 10 years of baking.</p>
+                </div>
+            </div>
+                    </div>
+    </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section class="section-testimonials py-5" data-aos="fade-up">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <span class="section-label">Reviews</span>
+            <h2 class="section-title">What Our Customers Say</h2>
+        </div>
+        <div class="testimonials-slider" id="testimonialsSlider">
+                        <div class="testimonial-card">
+                <div class="testi-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                <p class="testi-text">"The chocolate cake from Crumbs &amp; Co is absolutely divine! I order for every family birthday. The quality is consistently amazing."</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">
+                        S                    </div>
+                    <div>
+                        <strong>Sarah Kamau</strong>
+                                                <small>Regular Customer</small>
+                                            </div>
+                </div>
+            </div>
+                        <div class="testimonial-card">
+                <div class="testi-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                <p class="testi-text">"They made our wedding cake and it was breathtaking both in appearance and taste. Our guests could not stop talking about it!"</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">
+                        J                    </div>
+                    <div>
+                        <strong>James Mwangi</strong>
+                                                <small>Wedding Client</small>
+                                            </div>
+                </div>
+            </div>
+                        <div class="testimonial-card">
+                <div class="testi-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                <p class="testi-text">"As someone who reviews bakeries professionally, I can say this is top-tier. The sourdough and croissants are world-class."</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">
+                        A                    </div>
+                    <div>
+                        <strong>Amina Hassan</strong>
+                                                <small>Food Blogger</small>
+                                            </div>
+                </div>
+            </div>
+                        <div class="testimonial-card">
+                <div class="testi-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                <p class="testi-text">"We order from here for all office events. Fast delivery, beautiful packaging and everything tastes incredible. Highly recommend!"</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">
+                        P                    </div>
+                    <div>
+                        <strong>Peter Ochieng</strong>
+                                                <small>Corporate Client</small>
+                                            </div>
+                </div>
+            </div>
+                    </div>
+    </div>
+</section>
+
+<!-- ========== BLOG PREVIEW ========== -->
+
+<!-- ========== NEWSLETTER ========== -->
+<section class="section-newsletter py-5" data-aos="fade-up">
+    <div class="container">
+        <div class="newsletter-box">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <span class="section-label">Stay Updated</span>
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get the latest recipes, offers and bakery news delivered to your inbox.</p>
+                </div>
+                <div class="col-md-6">
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="hidden" name="csrf_token" value="c4caf247e8c45c98f36d0dd732126c708cd49c0202ddd95a103d99ba00fe50ee">                        <div class="input-group">
+                            <input type="email" class="form-control" name="email" placeholder="Your email address" required>
+                            <button class="btn btn-primary" type="submit">
+                                Subscribe <i class="fas fa-paper-plane ms-1"></i>
+                            </button>
+                        </div>
+                        <div id="newsletterMsg" class="mt-2"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="bakery-footer">
+    <div class="container">
+        <div class="row g-4 py-5">
+            <div class="col-lg-4">
+                <div class="footer-brand">
+                    <div class="brand-icon mb-3">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <h5></h5>
+                    <p>Artisan breads, cakes and pastries baked fresh every day in the heart of Nairobi.</p>
+                    <div class="social-links">
+                        <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6 class="footer-heading">Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="http://localhost/bakery">Home</a></li>
+                    <li><a href="http://localhost/bakery/pages/shop.php">Shop</a></li>
+                    <li><a href="http://localhost/bakery/pages/about.php">About Us</a></li>
+                    <li><a href="http://localhost/bakery/pages/blog.php">Blog</a></li>
+                    <li><a href="http://localhost/bakery/pages/contact.php">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6 class="footer-heading">Categories</h6>
+                <ul class="footer-links">
+                                        <li><a href="http://localhost/bakery/pages/shop.php?category=cakes">Cakes</a></li>
+                                        <li><a href="http://localhost/bakery/pages/shop.php?category=bread">Bread</a></li>
+                                        <li><a href="http://localhost/bakery/pages/shop.php?category=pastries">Pastries</a></li>
+                                        <li><a href="http://localhost/bakery/pages/shop.php?category=cookies">Cookies</a></li>
+                                        <li><a href="http://localhost/bakery/pages/shop.php?category=cupcakes">Cupcakes</a></li>
+                                        <li><a href="http://localhost/bakery/pages/shop.php?category=donuts">Donuts</a></li>
+                                    </ul>
+            </div>
+            <div class="col-lg-4">
+                <h6 class="footer-heading">Contact Us</h6>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-clock"></i> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 . All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="http://localhost/bakery/pages/privacy.php">Privacy Policy</a>
+                <a href="http://localhost/bakery/pages/terms.php">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Button -->
+
+<!-- Toast Container -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastContainer"></div>
+
+<!-- Quick View Modal -->
+<div class="modal fade" id="quickViewModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="quickViewContent">
+                <div class="text-center py-5">
+                    <div class="spinner-border text-primary"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="http://localhost/bakery/assets/js/main.js"></script>
+<script>
+    AOS.init({ duration: 700, once: true, easing: 'ease-out-cubic' });
+    
+    const APP_URL = 'http://localhost/bakery';
+    const CSRF_TOKEN = 'c4caf247e8c45c98f36d0dd732126c708cd49c0202ddd95a103d99ba00fe50ee';
+</script>
+</body>
+</html>
